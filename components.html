@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>input group</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="input-group col-lg-3">
+			<span class="input-group-addon">@</span>
+			<input type="text" class="form-control" placeholder="hello" />
+		</div>
+		<div class="input-group input-group-lg">
+			<input type="text" class="form-control" />	
+			<span class="input-group-addon">@</span>
+		</div>
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="input-group">
+					<span class="input-group-addon"><input type="checkbox" /></span>	
+					<input type="text" class="form-control"/>
+				</div>	
+			</div>	
+		</div>
+		<!--前面带下拉菜单-->
+		<div class="input-group col-lg-2">
+			<div class="input-group-btn">
+			<button class="btn btn-info dropdown-toggle" data-toggle = "dropdown">Action<span class="caret"></span></button>	
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">行动</a></li>
+				<li><a href="#">撤退</a></li>
+				<li><a href="#">冲锋</a></li>
+			</ul>
+			</div>
+			<input type="text" class="form-control"/>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+</html>

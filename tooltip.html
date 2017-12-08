@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>tooltip popover and alert demo</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="container">
+			欢迎来到<a href="http://www.bilibili.com" id="mytooltip" data-toggle = "tooltip" title="www.bilibili.com" data-placement = "bottom">哔哩哔哩动画</a>,这是的课程你值得拥有.	
+			<hr />
+			<!--
+            	作者：z199288@126.com
+            	时间：2017-11-14
+            	描述：data-trigger属性在自带浏览器中无法使用，在chrome,firefox中可以，即存在兼容性问题
+            -->
+			<a href="#" class="btn btn-default js-popover" data-toggle = "popover" data-trigger = "focus" title="the popover title" data-content = "this is the body of the content" data-placement = "bottom">点击显示over泡泡</a>
+			<!--alert Demo-->
+			<div class="container">
+				<div class="alert alert-danger fade in" id="myalert">
+					<button class="close" data-dismiss = "alert">&times;</button>	
+					<strong>哔哩哔哩</strong>欢迎您
+				</div>	
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('[data-toggle="tooltip"]').tooltip()
+		$(".js-popover").popover()
+		$("#myalert").on("closed.bs.alert",function(e){
+			console.log("alert has been closed!")
+		})
+	</script>
+</html>

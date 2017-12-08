@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>transition</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<style type="text/css">
+		#mydiv{
+			width: 100px;
+			height: 100px;
+			background: green;
+			-webkit-transition: 0.7s;
+			transition: 0.7s;
+		}
+		#mydiv:hover{
+			width: 400px;
+		}
+	</style>
+	<body>
+		<div id="mydiv">
+				
+		</div>
+	</body>
+	<script type="text/javascript">
+		document.getElementById("mydiv").addEventListener("transitionend",function(e){
+			this.innerHTML="过渡事件已完成";
+		})
+	</script>
+</html>

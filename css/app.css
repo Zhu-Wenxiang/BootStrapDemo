@@ -1,0 +1,35 @@
+h1,h3,p,a,button{
+	font-family: helvetica;
+}
+.onepage{
+	height: 750px;
+}
+.onepagebg{
+	height: 800px;
+	width: 100%;
+	position: absolute;
+	background-position: center center;
+	background-size: cover;
+}
+#onepagebg{
+	background-image: url(../img/featured-1.jpg);
+}
+.head1content{
+	margin-top: 45px;
+	line-height: 75px;
+}
+.title-text{
+	margin-left: 50px;	
+}
+.headfontsize h1{
+	font-size: 50px;	
+	color: #FFFFFF;
+}
+.headfontsize p{
+	color: #FFFFFF;
+}
+.head1content p{
+	margin-top: 20px;
+	line-height: 20px;
+}
+

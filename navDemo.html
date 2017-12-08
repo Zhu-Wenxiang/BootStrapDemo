@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>导航条效果练习</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>-->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<body>
+		<!--使用ul及class中的nav属性得到导航条 -->
+		<div class="container">
+			<ul id="navbar" class="nav nav-tabs nav-justified" role="tablist">
+				<li role="presentation" class="active"><a href="#">Home</a></li>
+				<li role="presentation"><a href="#">Features</a></li>
+				<li role="presentation"><a href="#">About</a></li>
+				<li role="presentation"><a href="#">Jobs</a></li>
+				<li role="presentation"><a href="#">Contact</a></li>
+			</ul>
+		</div><br />
+		<!--使用nav标签得到导航条-->
+		<nav class="nav navbar-default" role="navigation">
+			<!--网站名称-->
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">Turing</a>	
+				</div>
+			<!--各个选项-->
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Features</a></li>	
+					<li><a href="#">About</a></li>
+					<li><a href="#">Jobs</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle = "dropdown">
+						Contact Us<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Email</a></li>
+							<li><a href="#">Phone</a></li>
+							<li class="divider" role="seprator"></li>
+							<li><a href="#">Our Address</a></li>
+						</ul>
+					</li>
+				</ul>	
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<div class="input-group">
+						<input type="text" class="form-control"/>
+						<div class="input-group-addon" style="background-color: gainsboro;" >
+							<button class="glyphicon glyphicon-search" type="submit" style="border: hidden;"></button>
+						</div>
+					</div>
+					</div>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Link</a></li>
+					<li><a href="#" class="dropdown-toggle" data-toggle = "dropdown">Language<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">English</a></li>
+							<li><a href="#">简体中文</a><li>
+							<li><a href="#">한국어</a><li>
+						</ul>
+						
+					</li>
+				</ul>
+			</div>
+			</div>
+		</nav>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	<script>
+		$("#navbar a").click(function(e){
+			e.preventDefault();
+			$(this).tab("show")	
+		})
+	</script>
+</html>

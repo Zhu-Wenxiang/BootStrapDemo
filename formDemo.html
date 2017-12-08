@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>form表单练习</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<form role="form" class="form">
+			<div class="form-group" >
+				<label class="col-sm-5 control-label">Email</label>
+				<div class="col-sm-3">
+					<input type="email" placeholder="请输入您的邮箱" class="form-control"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-5 control-label">password</label>
+				<div class="col-sm-5">
+					<input type="password" class="form-control" placeholder="请输入密码" />		
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-lg-offset-5 col-sm-3">
+					<div class="checkbox-inline">
+						<label><input type="checkbox">记住密码</label>		
+					</div>
+				</div>	
+			</div>
+			<div class="form-group">
+				<div class="col-lg-offset-5 col-sm-5">
+					<button type="button" class="btn btn-default">登陆</button>	
+				</div>
+				
+			</div>
+		</form>
+		<form>
+			<input type="text" name="" id="" class="form-control"/>	
+			<textarea name="" rows="10" cols="2" class="form-control"></textarea>
+		</form>
+		<form role="form">
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" value="" />
+				吃鸡腿
+			</label>	
+			<label>
+				<input type="checkbox" value=""/>
+				吃鸭腿
+			</labe>
+		</div>
+		<div class="checkbox">
+			<label>
+			<input type="checkbox" value=""/>
+			吃猪蹄	
+			</label>
+		</div>
+		<div class="form-group">
+			
+		<div class="radio-inline">
+			<label>
+				<input type="radio" name="gender" />
+				男
+			</label>	
+		</div>
+		<div class="radio-inline">
+			<label >
+				<input type="radio" name="gender" />
+				女
+			</label>	
+		</div>
+		</div>
+		<div class="form-group col-sm-3" >
+		<select name="location" class="form-control">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		</div>
+		<p class="form-control-static">请按照该格式输入您的邮箱:tecentisshit@qq.com</p>
+		<input type="text" class="form-control" placeholder="hello" disabled="disabled" />
+		<input type="text" class="form-control" placeholder="readonly" readonly="readonly" />
+		<div class="form-group has-success">
+			<label >用户名</label>
+			<input type="text" class="form-control"/>	
+		</div>
+		<span class="help-block">
+			这是辅助文本	
+		</span>
+		</form>
+	</body>
+</html>

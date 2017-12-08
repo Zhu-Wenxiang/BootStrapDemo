@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>使用collapse做出手风琴效果</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="container">
+				<a href="#instanceOne" class="btn btn-default" data-toggle = "collapse" >点击打开</a>		
+			</div>	
+			<div class="collapse" id="instanceOne">
+				<div class="well">
+					我们是社会主义事业接班人!!!!
+				</div>	
+			</div>
+			<!--使用collapse实现手风琴效果-->
+			<div class="container">
+				<div class="panel-group" id="panelGroupOne" role="tablist">
+					<div class="panel panel-default">
+						<div class="panel-heading" rol="tab">
+							<h4 class="panel-title">
+								<a href="#panelContentOne"  data-toggle = "collapse" data-parent = "#panelGroupOne">
+									这是panelOne的title
+								</a>
+							</h4>	
+						</div>
+						<div class="panel-collapse collapse in" id="panelContentOne" role="tabpanel">
+							<div class="panel-body">
+								这里是panelBodyOne，welcome to my little secret garden
+							</div>	
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a href="#panelContentTwo"  data-toggle = "collapse" data-parent = "#panelGroupOne">这是panelTwo的title</a>
+							</h4>	
+						</div>
+						<div class="panel-collapse collapse" id="panelContentTwo" role="tabpanel">
+							<div class="panel-body">
+								这里是第二个panel的body！！！！	
+							</div>	
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a href="#panelContentThree"  data-toggle = "collapse" data-parent = "#panelGroupOne">这里是第三个paneltitle</a>	
+							</h4>	
+						</div>
+						<div class="panel-collapse collapse" id="panelContentThree">
+							<div class="panel-body">
+								这里是第三个panel的body	
+							</div>	
+						</div>	
+					</div>
+				</div>	
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+</html>
